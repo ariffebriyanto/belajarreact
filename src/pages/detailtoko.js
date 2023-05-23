@@ -2,9 +2,9 @@ import { useParams } from "react-router-dom";
 function DetailToko() {
 //     const url = new URL(window.location.href);
 // const yourParamName = url.searchParams.get('idtoko');
-let { idtoko,idtoko1 }=useParams();
-let toko= idtoko + ' ' + idtoko1;
-console.log(idtoko1);
+let { idtoko }=useParams();
+let toko= idtoko;
+console.log(idtoko);
    
     
       return (

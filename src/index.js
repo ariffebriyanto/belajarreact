@@ -8,7 +8,9 @@ import './index.css';
 import App from './App';
 import Toko from './pages/toko';
 import DetailToko from './pages/detailtoko';
+import BasicTable from './pages/BasicTable';
 import reportWebVitals from './reportWebVitals';
+import Api from './pages/api';
 
 const router = createBrowserRouter([
   {
@@ -17,22 +19,30 @@ const router = createBrowserRouter([
     <h1>Shopping List for </h1>
     <ul>
       <li><a href="/toko">mini tokopedia</a></li>
-      <li><a href="/detailtoko">detail toko</a></li>
+      <li><a href="/detailtoko/1/2">detail toko</a></li>
       <li>home</li>
     </ul>
   </div>,
   },
   {
     path: "/home",
-    element:<App /> ,
+    element:<App /> 
   },
   {
     path: "/toko",
     element:<Toko /> ,
   },
   {
-    path: "/detailtoko/:idtoko/:idtoko1",
+    path: "/detailtoko/:idtoko",
     element:<DetailToko /> ,
+  },
+  {
+    path: "/basictable",
+    element:<BasicTable /> ,
+  },
+  {
+    path: "/api",
+    element:<Api /> ,
   },
 ]);
 

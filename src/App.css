@@ -28,6 +28,29 @@
   color: #61dafb;
 }
 
+.post-card {
+border-style: solid;
+margin-top: 10px;
+padding: 5px;
+}
+.post-card .title {
+color: blue;
+
+}
+
+.add-post-container {
+  border-style: solid;
+  margin-left: 5px;
+}
+#title, #body {
+  margin-left: 22px;
+  margin: 5px;
+
+}
+
+#frmsubmit {
+  padding: 20px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
