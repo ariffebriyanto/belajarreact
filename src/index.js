@@ -10,19 +10,22 @@ import Toko from './pages/toko';
 import DetailToko from './pages/detailtoko';
 import BasicTable from './pages/BasicTable';
 import reportWebVitals from './reportWebVitals';
+import Login from './login';
 import Api from './pages/api';
+import RoueteGuard from './RouteGuard';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div className="shopping-list">
-    <h1>Shopping List for </h1>
-    <ul>
-      <li><a href="/toko">mini tokopedia</a></li>
-      <li><a href="/detailtoko/1/2">detail toko</a></li>
-      <li>home</li>
-    </ul>
-  </div>,
+    element:<Login />,
+  //   <div className="shopping-list">
+  //   <h1>Shopping List for </h1>
+  //   <ul>
+  //     <li><a href="/toko">mini tokopedia</a></li>
+  //     <li><a href="/detailtoko/1/2">detail toko</a></li>
+  //     <li>home</li>
+  //   </ul>
+  // </div>,
   },
   {
     path: "/home",

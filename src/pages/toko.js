@@ -1,7 +1,9 @@
 
+
 function Toko() {
 let b=0;
 let c=5;
+
 
 function hitung(a,b){
 return a+b;
