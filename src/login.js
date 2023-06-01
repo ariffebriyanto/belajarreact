@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { Navigate,useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
     const [newstate, setNewState] = useState({
         errorMsg: ''
     });
-
+    let navigate = useNavigate();
     const sigin = () => {
         let email = document.getElementById('email').value;
         // let email = 'john@mail.com';
@@ -27,8 +28,10 @@ const Login = () => {
                 if (json.access_token !== '') {
                     localStorage.setItem('jwt', json.access_token);
                     console.log(localStorage.getItem('jwt'));
-
+                    navigate("/home");
+                    
                 }
+                
 
             });
     }

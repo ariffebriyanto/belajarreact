@@ -1,7 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Login from './login';
+
+
+
 function App() {
+ // let navigate = useNavigate();
+  const logout = () => {
+    localStorage.clear();
+    window.location.replace("/")
+  };
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +28,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <button onClick={() => logout()}>log out</button>
     </div>
   );
 }
